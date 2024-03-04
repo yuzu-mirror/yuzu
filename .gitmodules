@@ -15,16 +15,16 @@
 	url = https://github.com/libusb/libusb.git
 [submodule "discord-rpc"]
 	path = externals/discord-rpc
-	url = https://github.com/yuzu-emu/discord-rpc.git
+	url = https://github.com/yuzu-mirror/discord-rpc.git
 [submodule "Vulkan-Headers"]
 	path = externals/Vulkan-Headers
 	url = https://github.com/KhronosGroup/Vulkan-Headers.git
 [submodule "sirit"]
 	path = externals/sirit
-	url = https://github.com/yuzu-emu/sirit.git
+	url = https://github.com/yuzu-mirror/sirit.git
 [submodule "mbedtls"]
 	path = externals/mbedtls
-	url = https://github.com/yuzu-emu/mbedtls.git
+	url = https://github.com/yuzu-mirror/mbedtls.git
 [submodule "xbyak"]
 	path = externals/xbyak
 	url = https://github.com/herumi/xbyak.git
@@ -57,7 +57,7 @@
 	url = https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator.git
 [submodule "breakpad"]
 	path = externals/breakpad
-	url = https://github.com/yuzu-emu/breakpad.git
+	url = https://github.com/yuzu-mirror/breakpad.git
 [submodule "simpleini"]
 	path = externals/simpleini
 	url = https://github.com/brofield/simpleini.git

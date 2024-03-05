@@ -126,7 +126,7 @@ async function tagAndPushEA(github, owner, repo, execa) {
     const newTag = `ea-${tagNumber + 1}`;
     console.log(`New tag: ${newTag}`);
     console.info('Pushing tags to GitHub ...');
-    await execa("git", ["remote", "add", "android", "https://github.com/yuzu-emu/yuzu-android.git"]);
+    await execa("git", ["remote", "add", "android", "https://github.com/yuzu-mirror/yuzu-android.git"]);
     await execa("git", ["fetch", "android"]);
 
     await execa("git", ['tag', newTag]);
@@ -224,7 +224,7 @@ async function resetBranch(execa) {
     console.log("::group::Reset master branch");
     let hasFailed = false;
     try {
-        await execa("git", ["remote", "add", "source", "https://github.com/yuzu-emu/yuzu.git"]);
+        await execa("git", ["remote", "add", "source", "https://github.com/yuzu-mirror/yuzu.git"]);
         await execa("git", ["fetch", "source"]);
         const process1 = await execa("git", ["rev-parse", "source/master"]);
         const headCommit = process1.stdout;
@@ -274,7 +274,7 @@ async function getMainlineTag(execa) {
     console.log(`::group::Getting mainline tag android-${MAINLINE_TAG}`);
     let hasFailed = false;
     try {
-        await execa("git", ["remote", "add", "mainline", "https://github.com/yuzu-emu/yuzu-android.git"]);
+        await execa("git", ["remote", "add", "mainline", "https://github.com/yuzu-mirror/yuzu-android.git"]);
         await execa("git", ["fetch", "mainline", "--tags"]);
         await execa("git", ["checkout", `tags/android-${MAINLINE_TAG}`]);
         await execa("git", ["submodule", "update", "--init", "--recursive"]);
@@ -300,7 +300,7 @@ async function mergebot(github, context, execa) {
     }
     console.info("The following pull requests will be merged:");
     console.table(displayList);
-    await fetchPullRequests(pulls, "https://github.com/yuzu-emu/yuzu", execa);
+    await fetchPullRequests(pulls, "https://github.com/yuzu-mirror/yuzu", execa);
     const mergeResults = await mergePullRequests(pulls, execa);
 
     if (BUILD_EA) {

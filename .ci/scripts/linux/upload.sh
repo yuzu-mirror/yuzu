@@ -27,7 +27,7 @@ fi
 # Build an AppImage
 cd build
 
-wget -nc https://github.com/yuzu-emu/ext-linux-bin/raw/main/appimage/appimagetool-x86_64.AppImage
+wget -nc https://github.com/yuzu-mirror/ext-linux-bin/raw/main/appimage/appimagetool-x86_64.AppImage
 chmod 755 appimagetool-x86_64.AppImage
 
 # if FUSE is not available, then fallback to extract and run

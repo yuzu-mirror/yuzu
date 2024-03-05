@@ -7,7 +7,7 @@
 #   prefix_var: name of a variable which will be set with the path to the extracted contents
 function(download_bundled_external remote_path lib_name prefix_var)
 
-set(package_base_url "https://github.com/yuzu-emu/")
+set(package_base_url "https://github.com/yuzu-mirror/")
 set(package_repo "no_platform")
 set(package_extension "no_platform")
 if (WIN32)

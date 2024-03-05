@@ -15,7 +15,7 @@ def check_individual(labels):
     return False
 
 def do_page(page):
-    url = f"https://api.github.com/repos/yuzu-emu/yuzu/pulls?page={page}"
+    url = f"https://api.github.com/repos/yuzu-mirror/yuzu/pulls?page={page}"
     response = requests.get(url)
     response.raise_for_status()
     if (response.ok):
@@ -26,7 +26,7 @@ def do_page(page):
             if (check_individual(pr["labels"])):
                 pn = pr["number"]
                 print(f"Matched PR# {pn}")
-                print(subprocess.check_output(["git", "fetch", "https://github.com/yuzu-emu/yuzu.git", f"pull/{pn}/head:pr-{pn}", "-f", "--no-recurse-submodules"]))
+                print(subprocess.check_output(["git", "fetch", "https://github.com/yuzu-mirror/yuzu.git", f"pull/{pn}/head:pr-{pn}", "-f", "--no-recurse-submodules"]))
                 print(subprocess.check_output(["git", "merge", "--squash", f"pr-{pn}"]))
                 print(subprocess.check_output(["git", "commit", f"-m\"Merge {tagline} PR {pn}\""]))
 

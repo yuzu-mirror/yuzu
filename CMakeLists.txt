@@ -319,7 +319,7 @@ if (ENABLE_LIBUSB)
 endif()
 
 if (ARCHITECTURE_x86 OR ARCHITECTURE_x86_64)
-    find_package(xbyak 6 CONFIG)
+    find_package(xbyak 7 CONFIG)
 endif()
 
 if (ARCHITECTURE_arm64)

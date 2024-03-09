@@ -292,13 +292,13 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_BINARY_DIR}/bin)
 # =======================================================================
 
 # Enforce the search mode of non-required packages for better and shorter failure messages
-find_package(Boost 1.80.0 REQUIRED context)
+find_package(Boost 1.79.0 REQUIRED context)
 find_package(enet 1.3 MODULE)
 find_package(fmt 9 REQUIRED)
 find_package(LLVM 17.0.2 MODULE COMPONENTS Demangle)
 find_package(lz4 REQUIRED)
-find_package(nlohmann_json 3.11 REQUIRED)
-find_package(Opus 1.4 MODULE)
+find_package(nlohmann_json 3.8 REQUIRED)
+find_package(Opus 1.3 MODULE)
 find_package(RenderDoc MODULE)
 find_package(SimpleIni MODULE)
 find_package(stb MODULE)
@@ -307,7 +307,7 @@ find_package(ZLIB 1.2 REQUIRED)
 find_package(zstd 1.5 REQUIRED)
 
 if (NOT YUZU_USE_EXTERNAL_VULKAN_HEADERS)
-    find_package(VulkanHeaders 1.3.279 REQUIRED)
+    find_package(VulkanHeaders 1.3.274 REQUIRED)
 endif()
 
 if (NOT YUZU_USE_EXTERNAL_VULKAN_UTILITY_LIBRARIES)
@@ -315,11 +315,11 @@ if (NOT YUZU_USE_EXTERNAL_VULKAN_UTILITY_LIBRARIES)
 endif()
 
 if (ENABLE_LIBUSB)
-    find_package(libusb 1.0.27 MODULE)
+    find_package(libusb 1.0.24 MODULE)
 endif()
 
 if (ARCHITECTURE_x86 OR ARCHITECTURE_x86_64)
-    find_package(xbyak 7 CONFIG)
+    find_package(xbyak 6 CONFIG)
 endif()
 
 if (ARCHITECTURE_arm64)
@@ -327,7 +327,7 @@ if (ARCHITECTURE_arm64)
 endif()
 
 if (ARCHITECTURE_x86_64 OR ARCHITECTURE_arm64)
-    find_package(dynarmic 6.7.0 CONFIG)
+    find_package(dynarmic 6.4.0 CONFIG)
 endif()
 
 if (ENABLE_CUBEB)

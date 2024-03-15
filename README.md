@@ -5,7 +5,7 @@ SPDX-License-Identifier: GPL-2.0-or-later
 
 <h1 align="center">
   <br>
-  <a href="https://yuzu-emu.org/"><img src="https://raw.githubusercontent.com/yuzu-mirror/yuzu-assets/master/icons/icon.png" alt="yuzu" width="200"></a>
+  <a href="https://yuzu-mirror.github.io/"><img src="https://raw.githubusercontent.com/yuzu-mirror/yuzu-assets/master/icons/icon.png" alt="yuzu" width="200"></a>
   <br>
   <b>yuzu</b>
   <br>
@@ -41,9 +41,9 @@ It is written in C++ with portability in mind, and we actively maintain builds f
 
 ## Compatibility
 
-The emulator is capable of running most commercial games at full speed, provided you meet the [necessary hardware requirements](https://yuzu-emu.org/help/quickstart/#hardware-requirements).
+The emulator is capable of running most commercial games at full speed, provided you meet the [necessary hardware requirements](https://yuzu-mirror.github.io/help/quickstart/#hardware-requirements).
 
-For a full list of games yuzu supports, please visit our [Compatibility page](https://web.archive.org/web/20240303155638/https://yuzu-emu.org/game/).
+For a full list of games yuzu supports, please visit our [Compatibility page](https://yuzu-mirror.github.io/game/).
 
 Check out our [website](https://yuzu-emu.org/) for the latest news on exciting features, monthly progress reports, and more!
 

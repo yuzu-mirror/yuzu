@@ -98,7 +98,7 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ccache apksigner glslang-dev glslang-tools
       - name: Build
-        run: ./.ci/scripts/android/eaReleasebuild.sh
+        run: ./.ci/scripts/android/eabuild.sh
       - name: Copy and sign artifacts
         env:
           EA_PLAY_ANDROID_KEYSTORE_B64: ${{ secrets.PLAY_ANDROID_KEYSTORE_B64 }}

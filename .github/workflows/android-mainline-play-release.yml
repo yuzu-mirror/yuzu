@@ -5,15 +5,6 @@ name: yuzu-android-mainline-play-release
 
 on:
   workflow_dispatch:
-    inputs:
-      release-tag:
-        description: 'Tag # from yuzu-android that you want to build and publish'
-        required: true
-        default: '200'
-      release-track:
-        description: 'Play store release track (internal/alpha/beta/production)'
-        required: true
-        default: 'alpha'
 
 jobs:
   android:

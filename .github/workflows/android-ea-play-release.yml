@@ -5,11 +5,6 @@ name: yuzu-android-ea-play-release
 
 on:
   workflow_dispatch:
-    inputs:
-      release-track:
-        description: 'Play store release track (internal/alpha/beta/production)'
-        required: true
-        default: 'alpha'
 
 jobs:
   android:

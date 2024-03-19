@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.repository == 'yuzu-emu/yuzu' }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         name: Checkout
         with:
           fetch-depth: 0
@@ -32,7 +32,7 @@ jobs:
       - name: Get tag name
         run: echo "GIT_TAG_NAME=$(cat tag-name.txt)" >> $GITHUB_ENV
       - name: Set up JDK 17
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'

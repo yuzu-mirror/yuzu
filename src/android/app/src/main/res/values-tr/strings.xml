@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- Genel uygulama dizeleri -->
+    <string name="notice_notification_channel_name">Bildirimler ve hatalar</string>
+    <string name="notice_notification_channel_id" translatable="false">bildirimlerVeHatalar</string>
+    <string name="notice_notification_channel_description">Bir şeyler yanlış gittiğinde bildirimleri gösterir.</string>
+    <string name="notification_permission_not_granted">Bildirim izni verilmedi!</string>
+
+    <!-- Kurulum dizeleri -->
+    <string name="welcome">Hoş geldiniz!</string>
+    <string name="welcome_description">&lt;b>yuzu&lt;/b>\'yu nasıl kuracağınızı öğrenin ve Emülatore başlayın.</string>
+    <string name="get_started">Başlayın</string>
+    <string name="keys">Anahtarlar</string>
+    <string name="keys_description">Aşağıdaki düğmeyle &lt;b>prod.keys&lt;/b> dosyanızı seçin.</string>
+    <string name="select_keys">Anahtarları Seçin</string>
+    <string name="games">Oyunlar</string>
+    <string name="games_description">Aşağıdaki düğmeyle &lt;b>Oyunlar&lt;/b> klasörünüzü seçin.</string>
+    <string name="done">Tamamlandı</string>
+    <string name="done_description">Her şey hazır.\nOyunlarınızın tadını çıkarın!</string>
+    <string name="text_continue">Devam</string>
+    <string name="next">Sonraki</string>
+    <string name="back">Geri</string>
+    <string name="add_games">Oyun Ekle</string>
+    <string name="add_games_description">Oyunlar klasörünüzü seçin</string>
+    <string name="step_complete">Tamamlandı!</string>
+
+    <!-- Ana sayfa dizeleri -->
+    <string name="home_games">Oyunlar</string>
+    <string name="home_search">Ara</string>
+    <string name="home_settings">Ayarlar</string>
+    <string name="empty_gamelist">Hiçbir dosya bulunamadı veya henüz oyun dizini seçilmedi.</string>
+    <string name="search_and_filter_games">Oyunları ara ve filtrele</string>
+    <string name="select_games_folder">Oyunlar klasörünü seçin</string>
+    <string name="manage_game_folders">Oyun klasörlerini yönet</string>
+    <string name="select_games_folder_description">yuzu\'nun oyun listesini doldurmasına izin verir</string>
+    <string name="add_games_warning">Oyunlar klasörü seçilmedi mi?</string>
+    <string name="add_games_warning_description">Klasör seçilmediğinde Oyunlar listesinde oyunlar görüntülenmez.</string>
+    <string name="add_games_warning_help">https://yuzu-emu.org/help/quickstart/#dumping-games</string>
+    <string name="home_search_games">Oyunları ara</string>
+    <string name="search_settings">Arama ayarları</string>
+    <string name="games_dir_selected">Oyunlar dizini seçildi</string>
+    <string name="install_prod_keys">prod.keys Yükle</string>
+    <string name="install_prod_keys_description">Perakende oyunları şifrelemek için gereklidir</string>
+    <string name="install_prod_keys_warning">Anahtar ekleme işlemini atlamak istiyor musunuz?</string>
+    <string name="install_prod_keys_warning_description">Perakende oyunları taklit etmek için geçerli anahtarlar gereklidir. Devam ederseniz yalnızca ev yapımı uygulamalar çalışır.</string>
+    <string name="install_prod_keys_warning_help">https://yuzu-emu.org/help/quickstart/#guide-introduction</string>
+    <string name="notifications">Bildirimler</string>
+    <string name="notifications_description">Aşağıdaki düğmeyle bildirim iznini verin.</string>
+    <string name="give_permission">İzni Ver</string>
+    <string name="notification_warning">Bildirim izni verme işlemini atlamak istiyor musunuz?</string>
+    <string name="notification_warning_description">yuzu önemli bilgileri size bildiremeyecek.</string>
+    <string name="permission_denied">İzin Reddedildi</string>
+    <string name="permission_denied_description">Bu izni çok kez reddettiniz ve şimdi sistem ayarlarında manuel olarak vermeyi seçmelisiniz.</string>
+    <string name="about">Hakkında</string>
+    <string name="about_description">Sürüm numarası, krediler ve daha fazlası</string>
+    <string name="warning_help">Yardım</string>
+    <string name="warning_skip">Atla</string>
+    <string name="warning_cancel">İptal</string>
+    <string name="install_amiibo_keys">Amiibo anahtarlarını yükle</string>
+    <string name="install_amiibo_keys_description">Oyunda Amiibo kullanmak için gereklidir</string>
+    <string name="invalid_keys_file">Geçersiz anahtar dosyası seçildi</string>
+    <string name="install_keys_success">Anahtarlar başarıyla yüklendi</string>
+    <string name="reading_keys_failure">Şifreleme anahtarları okuma hatası</string>
+    <string name="install_prod_keys_failure_extension_description">Anahtar dosyanızın .keys uzantısına sahip olduğunu doğrulayın ve tekrar deneyin.</string>
+    <string name="install_amiibo_keys_failure_extension_description">Anahtar dosyanızın .bin uzantısına sahip olduğunu doğrulayın ve tekrar deneyin.</string>
+    <string name="invalid_keys_error">Geçersiz şifreleme anahtarları</string>
+    <string name="dumping_keys_quickstart_link">https://yuzu-emu.org/help/quickstart/#dumping-decryption-keys</string>
+    <string name="install_keys_failure_description">Seçilen dosya yanlış veya bozuk. Lütfen anahtarlarınızı yeniden dökün.</string>
+    <string name="gpu_driver_manager">GPU sürücü yöneticisi</string>
+    <string name="install_gpu_driver">GPU sürücüsü yükle</string>
+    <string name="install_gpu_driver_description">Potansiyel olarak daha iyi performans veya doğruluk için alternatif sürücüler yükleyin</string>
+    <string name="advanced_settings">Gelişmiş ayarlar</string>
+    <string name="advanced_settings_game">Gelişmiş ayarlar: %1$s</string>
+    <string name="settings_description">Emülatör ayarlarını yapılandır</string>
+    <string name="search_recently_played">Son oynananlar</string>
+    <string name="search_recently_added">Son eklenenler</string>
+    <string name="search_retail">Perakende</string>
+    <string name="search_homebrew">Ev yapımı</string>
+    <string name="open_user_folder">yuzu klasörünü aç</string>
+    <string name="open_user_folder_description">yuzu\'nun dahili dosyalarını yönetin</string>
+    <string name="theme_and_color_description">Uygulamanın görünümünü değiştirin</string>
+    <string name="no_file_manager">Dosya yöneticisi bulunamadı</string>
+    <string name="notification_no_directory_link">yuzu klasörü açılamadı</string>
+    <string name="notification_no_directory_link_description">Lütfen dosya yöneticisinin yan paneli ile kullanıcı klasörünü manuel olarak bulun.</string>
+    <string name="manage_save_data">Kayıt verilerini yönet</string>
+    <string name="manage_save_data_description">Kayıt verileri bulundu. Lütfen aşağıdaki seçeneklerden birini seçin.</string>
+    <string name="import_save_warning">Kayıt verilerini içe aktar</string>
+    <string name="import_save_warning_description">Bu, mevcut tüm kayıt verilerini sağlanan dosya ile üzerine yazacaktır. Devam etmek istediğinizden emin misiniz?</string>
+    <string name="import_export_saves_description">Kayıt dosyalarını içe veya dışa aktar</string>
+    <string name="save_files_importing">Kayıt dosyaları içe aktarılıyor…</string>
+    <string name="save_files_exporting">Kayıt dosyaları dışa aktarılıyor…</string>
+    <string name="save_file_imported_success">Başarıyla içe aktarıldı</string>
+    <string name="save_file_invalid_zip_structure">Geçersiz kayıt dizin yapısı</string>
+    <string name="save_file_invalid_zip_structure_description">İlk alt klasör adı oyunun başlık kimliği olmalıdır.</string>
+    <string name="import_saves">İçe Aktar</string>
+    <string name="export_saves">Dışa Aktar</string>
+    <string name="install_firmware">Firmware yükle</string>
+    <string name="install_firmware_description">Firmware bir ZIP arşivinde olmalı ve bazı oyunları başlatmak için gereklidir</string>
+    <string name="firmware_installing">Firmware yükleniyor</string>
+    <string name="firmware_installed_success">Firmware başarıyla yüklendi</string>
+    <string name="firmware_installed_failure">Firmware yüklemesi başarısız oldu</string>
+    <string name="firmware_installed_failure_description">Firmware nca dosyalarının zip\'in kökünde olduğundan emin olun ve tekrar deneyin.</string>
+    <string name="share_log">Hata ayıklama günlüklerini paylaş</string>
+    <string name="share_log_description">Sorunları gidermek için yuzu\'nun günlük dosyasını paylaşın</string>
+    <string name="share_log_missing">Hiçbir günlük dosyası bulunamadı</string>
+    <string name="install_game_content">Oyun içeriğini yükle</string>
+    <string name="install_game_content_description">Oyun güncellemelerini veya DLC\'leri yükle</string>
+    <string name="installing_game_content">İçerik yükleniyor...</string>
+    <string name="install_game_content_failure">Dosyaların NAND\'a yüklenmesinde hata oluştu</string>
+    <string name="install_game_content_failure_description">Lütfen içeriğin geçerli olduğundan ve prod.keys dosyasının yüklü olduğundan emin olun.</string>
+    <string name="install_game_content_failure_base">Temel oyunların kurulumu, olası çatışmaları önlemek için izin verilmez.</string>
+    <string name="install_game_content_failure_file_extension">Yalnızca NSP ve XCI içeriği desteklenmektedir. Lütfen oyun içeriğinin geçerli olduğunu doğrulayın.</string>
+    <string name="install_game_content_failed_count">%1$d kurulum hatası</string>
+    <string name="install_game_content_success">Oyun içeriği başarıyla yüklendi</string>
+    <string name="install_game_content_success_install">%1$d başarıyla yüklendi</string>
+    <string name="install_game_content_success_overwrite">%1$d başarıyla üzerine yazıldı</string>
+    <string name="install_game_content_help_link">https://yuzu-emu.org/help/quickstart/#dumping-installed-updates</string>
+    <string name="custom_driver_not_supported">Özel sürücüler desteklenmiyor</string>
+    <string name="custom_driver_not_supported_description">Bu cihaz için özel sürücü yükleme şu anda desteklenmiyor. \nGelecekte destek eklenip eklenmediğini görmek için bu seçeneği tekrar kontrol edin!</string>
+    <string name="manage_yuzu_data">Yuzu verilerini yönet</string>
+    <string name="manage_yuzu_data_description">Firmware, anahtarlar, kullanıcı verileri ve daha fazlasını içe/dışa aktarın!</string>
+    <string name="share_save_file">Kayıt dosyasını paylaş</string>
+    <string name="export_save_failed">Kayıt dışa aktarılamadı</string>
+    <string name="game_folders">Oyun klasörleri</string>
+    <string name="deep_scan">Derin tarama</string>
+    <string name="add_game_folder">Oyun klasörü ekle</string>
+    <string name="folder_already_added">Bu klasör zaten eklenmiş!</string>
+    <string name="game_folder_properties">Oyun klasörü özellikleri</string>
+    <plurals name="saves_import_failed">
+        <item quantity="one">%d kaydı içe aktarma başarısız oldu</item>
+        <item quantity="other">%d kaydı içe aktarma başarısız oldu</item>
+    </plurals>
+    <plurals name="saves_import_success">
+        <item quantity="one">%d kayıt başarıyla içe aktarıldı</item>
+        <item quantity="other">%d kayıt başarıyla içe aktarıldı</item>
+    </plurals>
+    <string name="no_save_data_found">Kayıt verisi bulunamadı</string>
+    <string name="verify_installed_content">Yüklü içeriği doğrula</string>
+    <string name="verify_installed_content_description">Tüm yüklenen içeriği bozukluk açısından kontrol eder</string>
+    <string name="keys_missing">Şifreleme anahtarları eksik</string>
+    <string name="keys_missing_description">Firmware ve perakende oyunlar şifrelenemez</string>
+    <string name="keys_missing_help">https://yuzu-emu.org/help/quickstart/#dumping-decryption-keys</string>
+
+    <!-- Applet launcher strings -->
+    <string name="applets">Applet başlatıcı</string>
+    <string name="applets_description">Yüklenmiş firmware\'i kullanarak sistem appletlerini başlatın</string>
+    <string name="applets_error_firmware">Firmware yüklenmedi</string>
+    <string name="applets_error_applet">Applet mevcut değil</string>
+    <string name="applets_error_description"><![CDATA[Lütfen <a href="https://yuzu-emu.org/help/quickstart/#dumping-prodkeys-and-titlekeys">prod.keys</a> dosyanızın ve <a href="https://yuzu-emu.org/help/quickstart/#dumping-system-firmware">firmware</a>\'in yüklü olduğundan emin olun ve tekrar deneyin.]]></string>
+    <string name="album_applet">Albüm</string>
+    <string name="album_applet_description">Sistem fotoğraf görüntüleyicisi ile kullanıcı ekran görüntülerinde depolanan görüntüleri görüntüle</string>
+    <string name="mii_edit_applet">Mii düzenle</string>
+    <string name="mii_edit_applet_description">Sistem düzenleyicisi ile Miileri görüntüle ve düzenle</string>
+    <string name="cabinet_applet">Kabin</string>
+    <string name="cabinet_applet_description">Amiibo üzerinde depolanan verileri düzenle ve sil</string>
+    <string name="cabinet_launcher">Kabin başlatıcı</string>
+    <string name="cabinet_nickname_and_owner">Takma ad ve sahip ayarları</string>
+    <string name="cabinet_game_data_eraser">Oyun verisi silici</string>
+    <string name="cabinet_restorer">Gerçekleştirici</string>
+    <string name="cabinet_formatter">Biçimlendirici</string>
+
+    <!-- About screen strings -->
+    <string name="gaia_is_not_real">Gaia gerçek değil</string>
+    <string name="copied_to_clipboard">Panoya kopyalandı</string>
+    <string name="about_app_description">Açık kaynaklı bir Switch emülatörü</string>
+    <string name="contributors">Katkıda bulunanlar</string>
+    <string name="contributors_description">Yuzu ekibinden \u2764 ile yapıldı</string>
+    <string name="contributors_link">https://github.com/yuzu-emu/yuzu/graphs/contributors</string>
+    <string name="licenses_description">Yuzu için Android\'i mümkün kılan projeler</string>
+    <string name="build">Derleme</string>
+    <string name="user_data">Kullanıcı verileri</string>
+    <string name="user_data_description">Tüm uygulama verilerini içe/dışa aktar.\n\nKullanıcı verilerini içe aktardığınızda, mevcut tüm kullanıcı verileri silinecektir!</string>
+    <string name="exporting_user_data">Kullanıcı verileri dışa aktarılıyor...</string>
+    <string name="importing_user_data">Kullanıcı verileri içe aktarılıyor...</string>
+    <string name="import_user_data">Kullanıcı verilerini içe aktar</string>
+    <string name="invalid_yuzu_backup">Geçersiz yuzu yedekleme</string>
+    <string name="user_data_export_success">Kullanıcı verileri başarıyla dışa aktarıldı</string>
+    <string name="user_data_import_success">Kullanıcı verileri başarıyla içe aktarıldı</string>
+    <string name="user_data_export_cancelled">Dışa aktarma iptal edildi</string>
+    <string name="user_data_import_failed_description">Kullanıcı verisi klasörlerinin zip klasörünün kökünde olduğundan ve config/config.ini altında bir yapılandırma dosyası içerdiğinden emin olun ve tekrar deneyin.</string>
+    <string name="support_link">https://discord.gg/u77vRWY</string>
+    <string name="website_link">https://yuzu-emu.org/</string>
+    <string name="github_link">https://github.com/yuzu-emu</string>
+
+    <!-- Early access upgrade strings -->
+    <string name="early_access">Erken Erişim</string>
+    <string name="get_early_access">Erken Erişim Al</string>
+    <string name="play_store_link">https://play.google.com/store/apps/details?id=org.yuzu.yuzu_emu.ea</string>
+    <string name="get_early_access_description">Son teknoloji özellikler, güncellemelere erken erişim ve daha fazlası</string>
+    <string name="early_access_benefits">Erken Erişim Avantajları</string>
+    <string name="cutting_edge_features">Son teknoloji özellikler</string>
+    <string name="early_access_updates">Güncellemelere erken erişim</string>
+    <string name="no_manual_installation">Manuel kurulum yok</string>
+    <string name="prioritized_support">Öncelikli destek</string>
+    <string name="helping_game_preservation">Oyun koruma konusunda yardımcı olma</string>
+    <string name="our_eternal_gratitude">Ebedi minnettarlığımız</string>
+    <string name="are_you_interested">İlgileniyor musunuz?</string>
+
+    <!-- General settings strings -->
+    <string name="frame_limit_enable">Hızı Sınırla</string>
+    <string name="frame_limit_enable_description">Emülator hızını normal hızın belirli bir yüzdesine sınırlar.</string>
+    <string name="frame_limit_slider">Hız Sınırı Yüzdesini Belirle</string>
+    <string name="frame_limit_slider_description">Emülator hızını sınırlamak için yüzdeyi belirtir. %100 normal hızdır. Daha yüksek veya düşük değerler hız sınırını artırır veya azaltır.</string>
+    <string name="cpu_backend">CPU arka uç</string>
+    <string name="cpu_accuracy">CPU doğruluğu</string>
+    <string name="value_with_units">%1$s%2$s</string>
+
+    <!-- System settings strings -->
+    <string name="device_name">Cihaz adı</string>
+    <string name="use_docked_mode">Dock Modu</string>
+    <string name="use_docked_mode_description">Çözünürlüğü artırır, performansı azaltır. Devre dışı bırakıldığında El Modu kullanılır, çözünürlüğü düşürür ve performansı artırır.</string>
+    <string name="emulated_region">Emülator bölgesi</string>
+    <string name="emulated_language">Emüle edilen dil</string>
+    <string name="select_rtc_date">RTC tarihini seç</string>
+    <string name="select_rtc_time">RTC saatini seç</string>
+    <string name="use_custom_rtc">Özel RTC</string>
+    <string name="use_custom_rtc_description">Mevcut sistem zamanından farklı bir özel gerçek zaman saati ayarlamanıza olanak tanır.</string>
+    <string name="set_custom_rtc">Özel RTC Ayarla</string>
+
+    <!-- Graphics settings strings -->
+    <string name="renderer_accuracy">Doğruluk seviyesi</string>
+    <string name="renderer_resolution">Çözünürlük (El/Dock)</string>
+    <string name="renderer_vsync">VSync modu</string>
+    <string name="renderer_screen_layout">Yönlendirme</string>
+    <string name="renderer_aspect_ratio">En boy oranı</string>
+    <string name="renderer_scaling_filter">Pencere uyumlu filtre</string>
+    <string name="fsr_sharpness">FSR keskinliği</string>
+    <string name="fsr_sharpness_description">FSR\'nin dinamik kontrastını kullanırken görüntünün ne kadar keskin olacağını belirler</string>
+    <string name="renderer_anti_aliasing">Kenar yumuşatma yöntemi</string>
+    <string name="renderer_force_max_clock">Maksimum saatleri zorla (Yalnızca Adreno)</string>
+    <string name="renderer_force_max_clock_description">GPU\'nun maksimum olası saatlerde çalışmasını zorlar (termal kısıtlamalar yine de uygulanır).</string>
+    <string name="renderer_asynchronous_shaders">Asenkron gölgeleri kullan</string>
+    <string name="renderer_asynchronous_shaders_description">Gölgeleri asenkron olarak derler, takılmayı azaltır ancak hataları tetikleyebilir.</string>
+    <string name="renderer_reactive_flushing">Reaktif temizleme kullan</string>
+    <string name="renderer_reactive_flushing_description">Performans maliyetiyle bazı oyunlarda renderleme doğruluğunu artırır.</string>
+    <string name="use_disk_shader_cache">Disk gölgeleri önbelleği</string>
+    <string name="use_disk_shader_cache_description">Oluşturulan gölgeleri yerel olarak depolayarak ve yükleyerek takılmayı azaltır.</string>
+    <string name="anisotropic_filtering">Anizotropik filtreleme</string>
+    <string name="anisotropic_filtering_description">Dik açılardan bakıldığında doku kalitesini artırır</string>
+
+    <!-- Debug settings strings -->
+    <string name="cpu">CPU</string>
+    <string name="cpu_debug_mode">CPU Hata Ayıklama</string>
+    <string name="cpu_debug_mode_description">CPU\'yu yavaş bir hata ayıklama moduna koyar.</string>
+    <string name="gpu">GPU</string>
+    <string name="renderer_api">API</string>
+    <string name="renderer_debug">Grafik hata ayıklama</string>
+    <string name="renderer_debug_description">Grafik API\'sını yavaş bir hata ayıklama moduna ayarlar.</string>
+    <string name="fastmem">Hızlı bellek</string>
+
+    <!-- Audio settings strings -->
+    <string name="audio_output_engine">Çıkış motoru</string>
+    <string name="audio_volume">Ses düzeyi</string>
+    <string name="audio_volume_description">Ses çıkışının düzeyini belirtir.</string>
+
+    <!-- Input strings -->
+    <string name="buttons">Düğmeler</string>
+    <string name="button_a">A</string>
+    <string name="button_b">B</string>
+    <string name="button_x">X</string>
+    <string name="button_y">Y</string>
+    <string name="button_plus">Artı</string>
+    <string name="button_minus">Eksi</string>
+    <string name="button_home">Ana</string>
+    <string name="button_capture">Yakala</string>
+    <string name="start_pause">Başlat/Duraklat</string>
+    <string name="dpad">D-Pad</string>
+    <string name="up">Yukarı</string>
+    <string name="down">Aşağı</string>
+    <string name="left">Sol</string>
+    <string name="right">Sağ</string>
+    <string name="left_stick">Sol joystick</string>
+    <string name="control_stick">Kontrol joystick\'i</string>
+    <string name="right_stick">Sağ joystick</string>
+    <string name="c_stick">C-Joystick</string>
+    <string name="pressed">Basıldı</string>
+    <string name="range">Aralık</string>
+    <string name="deadzone">Ölü bölge</string>
+    <string name="modifier">Değiştirici</string>
+    <string name="modifier_range">Değiştirici aralığı</string>
+    <string name="triggers">Tetikler</string>
+    <string name="button_l">L</string>
+    <string name="button_r">R</string>
+    <string name="button_zl">ZL</string>
+    <string name="button_zr">ZR</string>
+    <string name="button_sl_left">Sol SL</string>
+    <string name="button_sr_left">Sol SR</string>
+    <string name="button_sl_right">Sağ SL</string>
+    <string name="button_sr_right">Sağ SR</string>
+    <string name="button_z">Z</string>
+    <string name="invalid">Geçersiz</string>
+    <string name="not_set">Ayarlanmadı</string>
+    <string name="unknown">Bilinmeyen</string>
+    <string name="qualified_hat">%1$s%2$s%3$sHat %4$s</string>
+    <string name="qualified_button_stick_axis">%1$s%2$s%3$sEksen %4$s</string>
+    <string name="qualified_button">%1$s%2$s%3$sDüğme %4$s</string>
+    <string name="qualified_axis">Eksen %1$s%2$s</string>
+    <string name="unused">Kullanılmayan</string>
+    <string name="input_prompt">Bir giriş yapın veya basın</string>
+    <string name="unsupported_input">Desteklenmeyen giriş türü</string>
+    <string name="input_mapping_filter">Giriş eşlemesi filtresi</string>
+    <string name="input_mapping_filter_description">Eşlemeleri filtrelemek için bir cihaz seçin</string>
+    <string name="auto_map">Kontrolcüyü otomatik olarak eşle</string>
+    <string name="auto_map_description">Otomatik eşlemeyi denemek için bir cihaz seçin</string>
+    <string name="attempted_auto_map">%1$s ile otomatik eşleme denendi</string>
+    <string name="controller_type">Kontrolcü türü</string>
+    <string name="pro_controller">Pro Kontrolcü</string>
+    <string name="handheld">Taşınabilir</string>
+    <string name="dual_joycons">Çift Joy-Con</string>
+    <string name="left_joycon">Sol Joy-Con</string>
+    <string name="right_joycon">Sağ Joy-Con</string>
+    <string name="gamecube_controller">GameCube Kontrolcüsü</string>
+    <string name="invert_axis">Eksenleri tersine çevir</string>
+    <string name="invert_button">Düğmeleri tersine çevir</string>
+    <string name="toggle_button">Düğmeyi aç/kapa</string>
+    <string name="turbo_button">Turbo düğmesi</string>
+    <string name="set_threshold">Eşik ayarla</string>
+    <string name="toggle_axis">Ekseni aç/kapa</string>
+    <string name="connected">Bağlı</string>
+    <string name="use_system_vibrator">Sistem titreşimini kullan</string>
+    <string name="input_overlay">Giriş örtüsü</string>
+    <string name="vibration">Titreşim</string>
+    <string name="vibration_strength">Titreşim şiddeti</string>
+    <string name="profile">Profil</string>
+    <string name="create_new_profile">Yeni profil oluştur</string>
+    <string name="enter_profile_name">Profil adını girin</string>
+    <string name="profile_name_already_exists">Profil adı zaten var</string>
+    <string name="invalid_profile_name">Geçersiz profil adı</string>
+    <string name="use_global_input_configuration">Genel giriş yapılandırmasını kullan</string>
+    <string name="player_num_profile">%d. oyuncu profili</string>
+    <string name="delete_input_profile">Giriş profili sil</string>
+    <string name="delete_input_profile_description">Bu profili silmek istediğinizden emin misiniz? Bu geri alınamaz.</string>
+    <string name="stick_map_description">Bir çubuğu sola ve ardından yukarıya doğru hareket ettirin veya bir düğmeye basın</string>
+    <string name="button_map_description">Bir düğmeye basın veya bir tetikleyici/çubuk hareket ettirin</string>
+    <string name="map_dpad_direction">D-Pad\'e %1$s eşle</string>
+    <string name="map_control">%1$s\'e eşle</string>
+    <string name="failed_to_load_profile">Profil yüklenemedi</string>
+    <string name="failed_to_save_profile">Profil kaydedilemedi</string>
+    <string name="reset_mapping">Eşlemeleri sıfırla</string>
+    <string name="reset_mapping_description">Bu kontrolcü için tüm eşlemeleri varsayılan değerlere sıfırlamak istediğinizden emin misiniz? Bu geri alınamaz.</string>
+
+    <!-- Miscellaneous -->
+    <string name="slider_default">Varsayılan</string>
+    <string name="ini_saved">Ayarlar kaydedildi</string>
+    <string name="gameid_saved">%1$s için ayarlar kaydedildi</string>
+    <string name="error_saving">%1$s.ini kaydedilemedi: %2$s</string>
+    <string name="unimplemented_menu">Uygulanmamış Menü</string>
+    <string name="loading">Yükleniyor…</string>
+    <string name="shutting_down">Kapatılıyor…</string>
+    <string name="reset_setting_confirmation">Bu ayarı varsayılan değerine sıfırlamak istiyor musunuz?</string>
+    <string name="reset_to_default">Varsayılana sıfırla</string>
+    <string name="reset_to_default_description">Tüm gelişmiş ayarlar sıfırlanır</string>
+    <string name="reset_all_settings">Tüm ayarları sıfırla?</string>
+    <string name="reset_all_settings_description">Tüm gelişmiş ayarlar varsayılan yapılandırmaya sıfırlanacak. Bu geri alınamaz.</string>
+    <string name="settings_reset">Ayarlar sıfırlandı</string>
+    <string name="close">Kapat</string>
+    <string name="learn_more">Daha fazla bilgi edinin</string>
+    <string name="auto">Otomatik</string>
+    <string name="submit">Gönder</string>
+    <string name="string_null">Boş</string>
+    <string name="string_import">İçe aktar</string>
+    <string name="export">Dışa aktar</string>
+    <string name="export_failed">Dışa aktarma başarısız oldu</string>
+    <string name="import_failed">İçe aktarma başarısız oldu</string>
+    <string name="cancelling">İptal ediliyor</string>
+    <string name="install">Yükle</string>
+    <string name="delete">Sil</string>
+    <string name="edit">Düzenle</string>
+    <string name="export_success">Başarıyla dışa aktarıldı</string>
+    <string name="start">Başlat</string>
+    <string name="clear">Temizle</string>
+    <string name="global">Genel</string>
+    <string name="custom">Özel</string>
+    <string name="notice">Dikkat</string>
+    <string name="import_complete">İçe aktarma tamamlandı</string>
+    <string name="more_options">Daha fazla seçenek</string>
+    <string name="use_global_setting">Genel ayarı kullan</string>
+    <string name="operation_completed_successfully">İşlem başarıyla tamamlandı</string>
+    <string name="retry">Yeniden dene</string>
+    <string name="confirm">Onayla</string>
+    <string name="load">Yükle</string>
+    <string name="save">Kaydet</string>
+
+    <!-- GPU driver installation -->
+    <string name="select_gpu_driver">GPU sürücüsünü seçin</string>
+    <string name="select_gpu_driver_title">Mevcut GPU sürücünüzü değiştirmek istiyor musunuz?</string>
+    <string name="select_gpu_driver_install">Yükle</string>
+    <string name="select_gpu_driver_default">Varsayılan</string>
+    <string name="select_gpu_driver_use_default">Varsayılan GPU sürücüsünü kullanma</string>
+    <string name="select_gpu_driver_error">Geçersiz sürücü seçildi</string>
+    <string name="driver_already_installed">Sürücü zaten yüklü</string>
+    <string name="system_gpu_driver">Sistem GPU sürücüsü</string>
+    <string name="installing_driver">Sürücü yükleniyor…</string>
+
+    <!-- Preferences Screen -->
+    <string name="preferences_settings">Ayarlar</string>
+    <string name="preferences_general">Genel</string>
+    <string name="preferences_system">Sistem</string>
+    <string name="preferences_system_description">Bağlı mod, bölge, dil</string>
+    <string name="preferences_graphics">Grafikler</string>
+    <string name="preferences_graphics_description">Doğruluk seviyesi, çözünürlük, shader önbelleği</string>
+    <string name="preferences_audio">Ses</string>
+    <string name="preferences_audio_description">Çıkış motoru, ses düzeyi</string>
+    <string name="preferences_controls">Kontroller</string>
+    <string name="preferences_controls_description">Denetleyici girişini eşle</string>
+    <string name="preferences_player">Oyuncu %d</string>
+    <string name="preferences_theme">Tema ve renk</string>
+    <string name="preferences_debug">Hata Ayıklama</string>
+    <string name="preferences_debug_description">CPU/GPU hata ayıklama, grafik API\'si, hızlı bellek</string>
+
+    <!-- Game properties -->
+    <string name="info">Bilgi</string>
+    <string name="info_description">Program ID\'si, geliştirici, sürüm</string>
+    <string name="per_game_settings">Oyun başına ayarlar</string>
+    <string name="per_game_settings_description">Bu oyun için özel ayarları düzenle</string>
+    <string name="launch_options">Başlatma yapılandırması</string>
+    <string name="path">Yol</string>
+    <string name="program_id">Program ID\'si</string>
+    <string name="developer">Geliştirici</string>
+    <string name="version">Sürüm</string>
+    <string name="copy_details">Ayrıntıları kopyala</string>
+    <string name="add_ons">Eklentiler</string>
+    <string name="add_ons_description">Modları, güncelleştirmeleri ve DLC\'leri aç/kapat</string>
+    <string name="clear_shader_cache">Shader önbelleğini temizle</string>
+    <string name="clear_shader_cache_description">Bu oyunu oynarken oluşturulan tüm shader\'ları kaldırır</string>
+    <string name="clear_shader_cache_warning_description">Shader önbelleği yeniden oluşturulurken daha fazla takılma yaşayabilirsiniz</string>
+    <string name="cleared_shaders_successfully">Shader\'lar başarıyla temizlendi</string>
+    <string name="addons_game">Eklentiler: %1$s</string>
+    <string name="save_data">Kayıt verisi</string>
+    <string name="save_data_description">Bu oyun için özel kayıt verilerini yönet</string>
+    <string name="delete_save_data">Kayıt verisini sil</string>
+    <string name="delete_save_data_description">Bu oyun için tüm kayıt verilerini kaldırır</string>
+    <string name="delete_save_data_warning_description">Bu işlem, bu oyunun tüm kayıt verilerini geri alınamaz bir şekilde kaldırır. Devam etmek istediğinizden emin misiniz?</string>
+    <string name="save_data_deleted_successfully">Kayıt verisi başarıyla silindi</string>
+    <string name="select_content_type">İçerik türünü seç</string>
+    <string name="updates_and_dlc">Güncelleştirmeler ve DLC\'ler</string>
+    <string name="mods_and_cheats">Modlar ve hileler</string>
+    <string name="addon_notice">Önemli eklenti uyarısı</string>
+    <!-- "cheats/" "romfs/" and "exefs/ should not be translated -->
+    <string name="addon_notice_description">Mod ve hile yüklemek için, bir cheats/, romfs/ veya exefs/ dizini içeren bir klasör seçmelisiniz. Bunların oyununuzla uyumlu olup olmadığını doğrulayamıyoruz, bu yüzden dikkatli olun!</string>
+    <string name="invalid_directory">Geçersiz dizin</string>
+    <!-- "cheats/" "romfs/" and "exefs/ should not be translated -->
+    <string name="invalid_directory_description">Lütfen seçtiğiniz dizinin bir cheats/, romfs/ veya exefs/ klasörü içerdiğinden emin olun ve tekrar deneyin.</string>
+    <string name="addon_installed_successfully">Eklenti başarıyla yüklendi</string>
+    <string name="verifying_content">İçerik doğrulanıyor…</string>
+    <string name="content_install_notice">İçerik yükleme uyarısı</string>
+    <string name="content_install_notice_description">Seçtiğiniz içerik bu oyunla eşleşmiyor.\nYine de yüklemek istiyor musunuz?</string>
+    <string name="confirm_uninstall">Kaldırmayı Onayla</string>
+    <string name="confirm_uninstall_description">Bu eklentiyi kaldırmak istediğinizden emin misiniz?</string>
+    <string name="verify_integrity">Bütünlüğü Doğrula</string>
+    <string name="verifying">Doğrulanıyor…</string>
+    <string name="verify_success">Bütünlük doğrulaması başarılı!</string>
+    <string name="verify_failure">Bütünlük doğrulaması başarısız!</string>
+    <string name="verify_failure_description">Dosya içeriği bozuk olabilir</string>
+    <string name="verify_no_result">Bütünlük doğrulaması yapılamadı</string>
+    <string name="verify_no_result_description">Dosya içeriği geçerlilik açısından kontrol edilmedi</string>
+    <string name="verification_failed_for">Aşağıdaki dosyalar için doğrulama başarısız oldu:\n%1$s</string>
+
+    <!-- ROM loading errors -->
+    <string name="loader_error_encrypted">ROM\'unuz şifrelenmiş</string>
+    <string name="loader_error_encrypted_roms_description"><![CDATA[Lütfen <a href="https://yuzu-emu.org/help/quickstart/#dumping-physical-titles-game-cards">oyun kartlarınızı</a> veya <a href="https://yuzu-emu.org/help/quickstart/#dumping-digital-titles-eshop">yüklü başlıklarınızı</a> yeniden dökme kılavuzlarını takip edin.]]></string>
+    <string name="loader_error_encrypted_keys_description"><![CDATA[Lütfen oyunların şifresini çözebilmesi için <a href="https://yuzu-emu.org/help/quickstart/#dumping-prodkeys-and-titlekeys">prod.keys</a> dosyanızın kurulu olduğundan emin olun.]]></string>
+    <string name="loader_error_video_core">Video çekirdeği başlatılırken bir hata oluştu</string>
+    <string name="loader_error_video_core_description">Bu genellikle uyumsuz bir GPU sürücüsünden kaynaklanır. Özel bir GPU sürücüsü yüklemek bu sorunu çözebilir.</string>
+    <string name="loader_error_invalid_format">ROM yüklenemiyor</string>
+    <string name="loader_error_file_not_found">ROM dosyası mevcut değil</string>
+
+    <!-- Emulation Menu -->
+    <string name="emulation_exit">Emülatorü Kapat</string>
+    <string name="emulation_done">Tamamlandı</string>
+    <string name="emulation_fps_counter">FPS sayacı</string>
+    <string name="emulation_thermal_indicator">Termal gösterge</string>
+    <string name="emulation_toggle_controls">Denetimleri Değiştir</string>
+    <string name="emulation_rel_stick_center">Göreceli çubuk merkezi</string>
+    <string name="emulation_dpad_slide">D-pad kaydırma</string>
+    <string name="emulation_haptics">Dokunma titreşimi</string>
+    <string name="emulation_show_overlay">Bindirme göster</string>
+    <string name="emulation_toggle_all">Hepsini Değiştir</string>
+    <string name="emulation_control_adjust">Bindirme ayarla</string>
+    <string name="emulation_control_scale">Ölçek</string>
+    <string name="emulation_control_opacity">Opaklık</string>
+    <string name="emulation_touch_overlay_reset">Bindirme sıfırla</string>
+    <string name="emulation_touch_overlay_edit">Bindirme düzenle</string>
+    <string name="emulation_pause">Emülatorü Duraklat</string>
+    <string name="emulation_unpause">Emülatorü Devam Ettir</string>
+    <string name="emulation_input_overlay">Bindirme seçenekleri</string>
+    <string name="touchscreen">Dokunmatik ekran</string>
+    <string name="lock_drawer">Çekmecenin Kilidini Kapat</string>
+    <string name="unlock_drawer">Çekmecenin Kilidini Aç</string>
+
+    <string name="load_settings">Ayarlar Yükleniyor…</string>
+
+    <!-- Software keyboard -->
+    <string name="software_keyboard">Yazılı Klavye</string>
+
+    <!-- Errors and warnings -->
+    <string name="abort_button">Vazgeç</string>
+    <string name="continue_button">Devam</string>
+    <string name="system_archive_not_found">Sistem Arşivi Bulunamadı</string>
+    <string name="system_archive_not_found_message">%s eksik. Lütfen sistem arşivlerinizi dökün.\nEmülatore devam etmek çökmelere ve hatalara neden olabilir.</string>
+    <string name="system_archive_general">Bir sistem arşivi</string>
+    <string name="save_load_error">Kaydet/Yükle Hatası</string>
+    <string name="fatal_error">Ölümcül Hata</string>
+    <string name="fatal_error_message">Bir ölümcül hata oluştu. Ayrıntılar için günlüğü kontrol edin.\nEmülatore devam etmek çökmelere ve hatalara neden olabilir.</string>
+    <string name="performance_warning">Bu ayarı kapatmak, emülator performansını önemli ölçüde düşürecektir! En iyi deneyim için bu ayarın etkin bırakılması önerilir.</string>
+    <string name="device_memory_inadequate">Cihaz RAM\'i: %1$s\nÖnerilen: %2$s</string>
+    <string name="memory_formatted">%1$s %2$s</string>
+    <string name="no_game_present">Önyüklenebilir oyun bulunamadı!</string>
+
+    <!-- Region Names -->
+    <string name="region_japan">Japonya</string>
+    <string name="region_usa">ABD</string>
+    <string name="region_europe">Avrupa</string>
+    <string name="region_australia">Avustralya</string>
+    <string name="region_china">Çin</string>
+    <string name="region_korea">Kore</string>
+    <string name="region_taiwan">Tayvan</string>
+
+    <!-- Language Names -->
+    <string name="language_japanese" translatable="false">日本語</string>
+    <string name="language_english" translatable="false">İngilizce</string>
+    <string name="language_french" translatable="false">Fransızca</string>
+    <string name="language_german" translatable="false">Almanca</string>
+    <string name="language_italian" translatable="false">İtalyanca</string>
+    <string name="language_spanish" translatable="false">İspanyolca</string>
+    <string name="language_chinese" translatable="false">Basitleştirilmiş Çince</string>
+    <string name="language_korean" translatable="false">Korece</string>
+    <string name="language_dutch" translatable="false">Felemenkçe</string>
+    <string name="language_portuguese" translatable="false">Portekizce</string>
+    <string name="language_russian" translatable="false">Rusça</string>
+    <string name="language_taiwanese" translatable="false">Tayvanlı</string>
+    <string name="language_british_english" translatable="false">İngiliz İngilizcesi</string>
+    <string name="language_canadian_french" translatable="false">Kanada Fransızcası</string>
+    <string name="language_latin_american_spanish" translatable="false">Latin Amerika İspanyolcası</string>
+    <string name="language_simplified_chinese" translatable="false">Basitleştirilmiş Çince</string>
+    <string name="language_traditional_chinese" translatable="false">Geleneksel Çince</string>
+    <string name="language_brazilian_portuguese" translatable="false">Brezilya Portekizcesi</string>
+
+    <!-- Memory Sizes -->
+    <string name="memory_byte">Bayt</string>
+    <string name="memory_byte_shorthand">B</string>
+    <string name="memory_kilobyte">KB</string>
+    <string name="memory_megabyte">MB</string>
+    <string name="memory_gigabyte">GB</string>
+    <string name="memory_terabyte">TB</string>
+    <string name="memory_petabyte">PB</string>
+    <string name="memory_exabyte">EB</string>
+
+    <!-- Renderer APIs -->
+    <string name="renderer_vulkan">Vulkan</string>
+    <string name="renderer_none">Hiçbiri</string>
+
+    <!-- Renderer Accuracy -->
+    <string name="renderer_accuracy_normal">Normal</string>
+    <string name="renderer_accuracy_high">Yüksek</string>
+    <string name="renderer_accuracy_extreme">Aşırı (Yavaş)</string>
+
+    <!-- Resolutions -->
+    <string name="resolution_half">0.5X (360p/540p)</string>
+    <string name="resolution_three_quarter">0.75X (540p/810p)</string>
+    <string name="resolution_one">1X (720p/1080p)</string>
+    <string name="resolution_two">2X (1440p/2160p) (Yavaş)</string>
+    <string name="resolution_three">3X (2160p/3240p) (Yavaş)</string>
+    <string name="resolution_four">4X (2880p/4320p) (Yavaş)</string>
+
+    <!-- Renderer VSync -->
+    <string name="renderer_vsync_immediate">Hemen (Kapalı)</string>
+    <string name="renderer_vsync_mailbox">Posta Kutusu</string>
+    <string name="renderer_vsync_fifo">FIFO (Açık)</string>
+    <string name="renderer_vsync_fifo_relaxed">FIFO Rahatlatılmış</string>
+
+    <!-- Scaling Filters -->
+    <string name="scaling_filter_nearest_neighbor">En Yakın Komşu</string>
+    <string name="scaling_filter_bilinear">Bilinear</string>
+    <string name="scaling_filter_bicubic">Bicubic</string>
+    <string name="scaling_filter_gaussian">Gaussian</string>
+    <string name="scaling_filter_scale_force">ScaleForce</string>
+    <string name="scaling_filter_fsr">AMD FidelityFX™ Süper Çözünürlük</string>
+
+    <!-- Anti-Aliasing -->
+    <string name="anti_aliasing_none">Hiçbiri</string>
+    <string name="anti_aliasing_fxaa">FXAA</string>
+    <string name="anti_aliasing_smaa">SMAA</string>
+
+    <!-- Screen Layouts -->
+    <string name="screen_layout_auto">Otomatik</string>
+    <string name="screen_layout_sensor_landscape">Sensör manzarası</string>
+    <string name="screen_layout_landscape">Manzara</string>
+    <string name="screen_layout_reverse_landscape">Ters manzara</string>
+    <string name="screen_layout_sensor_portrait">Sensör portresi</string>
+    <string name="screen_layout_portrait">Portre</string>
+    <string name="screen_layout_reverse_portrait">Ters portre</string>
+
+    <!-- Aspect Ratios -->
+    <string name="ratio_default">Varsayılan (16:9)</string>
+    <string name="ratio_force_four_three">4:3 Zorla</string>
+    <string name="ratio_force_twenty_one_nine">21:9 Zorla</string>
+    <string name="ratio_force_sixteen_ten">16:10 Zorla</string>
+    <string name="ratio_stretch">Pencereye uzat</string>
+
+    <!-- CPU Backend -->
+    <string name="cpu_backend_dynarmic">Dynarmic (Yavaş)</string>
+    <string name="cpu_backend_nce">Doğal kod yürütme (NCE)</string>
+
+    <!-- CPU Accuracy -->
+    <string name="cpu_accuracy_accurate">Doğru</string>
+    <string name="cpu_accuracy_unsafe">Güvensiz</string>
+    <string name="cpu_accuracy_paranoid">Paranoid (Yavaş)</string>
+
+    <!-- Gamepad Buttons -->
+    <string name="gamepad_d_pad">D-pad</string>
+    <string name="gamepad_left_stick">Sol çubuk</string>
+    <string name="gamepad_right_stick">Sağ çubuk</string>
+    <string name="gamepad_home">Ana Sayfa</string>
+    <string name="gamepad_screenshot">Ekran Görüntüsü</string>
+
+    <!-- Disk shader cache -->
+    <string name="preparing_shaders">Shader\'lar hazırlanıyor</string>
+    <string name="building_shaders">Shader\'lar oluşturuluyor</string>
+
+    <!-- Theme options -->
+    <string name="change_app_theme">Uygulama temasını değiştir</string>
+    <string name="theme_default">Varsayılan</string>
+    <string name="theme_material_you">Material You</string>
+
+    <!-- Theme Modes -->
+    <string name="change_theme_mode">Tema modunu değiştir</string>
+    <string name="theme_mode_follow_system">Sistemi Takip Et</string>
+    <string name="theme_mode_light">Açık</string>
+    <string name="theme_mode_dark">Koyu</string>
+
+    <!-- Audio output engines -->
+    <string name="oboe">oboe</string>
+    <string name="cubeb">cubeb</string>
+
+    <!-- Anisotropic filtering options -->
+    <string name="multiplier_two">2x</string>
+    <string name="multiplier_four">4x</string>
+    <string name="multiplier_eight">8x</string>
+    <string name="multiplier_sixteen">16x</string>
+
+    <!-- Black backgrounds theme -->
+    <string name="use_black_backgrounds">Siyah arka planlar</string>
+    <string name="use_black_backgrounds_description">Koyu tema kullanırken siyah arka planları uygula.</string>
+
+    <!-- Picture-In-Picture -->
+    <string name="picture_in_picture">Resim içinde resim</string>
+    <string name="picture_in_picture_description">Arka plana yerleştirildiğinde pencereyi küçült</string>
+    <string name="pause">Duraklat</string>
+    <string name="play">Oynat</string>
+    <string name="mute">Sessize al</string>
+    <string name="unmute">Sesi aç</string>
+
+    <!-- Emülator dikey hizalama -->
+    <string name="vertical_alignment">Dikey hizalama</string>
+    <string name="top">Üst</string>
+    <string name="center">Orta</string>
+    <string name="bottom">Alt</string>
+
+    <!-- Licenses screen strings -->
+    <string name="licenses">Licenses</string>
+    <string name="license_fidelityfx_fsr" translatable="false">FidelityFX-FSR</string>
+    <string name="license_fidelityfx_fsr_description">High-quality upscaling from AMD</string>
+    <string name="license_fidelityfx_fsr_link" translatable="false">https://github.com/GPUOpen-Effects/FidelityFX-FSR</string>
+    <string name="license_fidelityfx_fsr_copyright" translatable="false">Copyright © 2021 Advanced Micro Devices, Inc.</string>
+    <string name="license_fidelityfx_fsr_text" translatable="false">
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the \"Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:\n\n
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.\n\n
+
+THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+    </string>
+    <string name="license_cubeb" translatable="false">cubeb</string>
+    <string name="license_cubeb_description" translatable="false">Cross platform audio library</string>
+    <string name="license_cubeb_link" translatable="false">https://github.com/mozilla/cubeb</string>
+    <string name="license_cubeb_copyright" translatable="false">Copyright © 2011 Mozilla Foundation</string>
+    <string name="license_cubeb_text" translatable="false">
+Permission to use, copy, modify, and distribute this software for any
+purpose with or without fee is hereby granted, provided that the above
+copyright notice and this permission notice appear in all copies.\n\n
+
+THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+    </string>
+    <string name="license_dynarmic" translatable="false">Dynarmic</string>
+    <string name="license_dynarmic_description" translatable="false">An ARM dynamic recompiler</string>
+    <string name="license_dynarmic_link" translatable="false">https://github.com/merryhime/dynarmic</string>
+    <string name="license_dynarmic_copyright" translatable="false">Copyright © 2017 merryhime</string>
+    <string name="license_dynarmic_text" translatable="false">
+Permission to use, copy, modify, and/or distribute this software for
+any purpose with or without fee is hereby granted.\n\n
+
+THE SOFTWARE IS PROVIDED \"AS IS\" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT
+OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+    </string>
+    <string name="license_ffmpeg" translatable="false">FFmpeg</string>
+    <string name="license_ffmpeg_description" translatable="false">FFmpeg is a collection of libraries and tools to process multimedia content such as audio, video, subtitles and related metadata.</string>
+    <string name="license_ffmpeg_link" translatable="false">https://github.com/FFmpeg/FFmpeg</string>
+    <string name="license_ffmpeg_copyright" translatable="false">Copyright © 1991, 1999 Free Software Foundation, Inc.</string>
+    <string name="license_ffmpeg_text" translatable="false">
+GNU LESSER GENERAL PUBLIC LICENSE\n
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n
+
+  0. This License Agreement applies to any software library or other
+program which contains a notice placed by the copyright holder or
+other authorized party saying it may be distributed under the terms of
+this Lesser General Public License (also called \"this License\").
+Each licensee is addressed as \"you\".\n\n
+
+  A \"library\" means a collection of software functions and/or data
+prepared so as to be conveniently linked with application programs
+(which use some of those functions and data) to form executables.\n\n
+
+  The \"Library\", below, refers to any such software library or work
+which has been distributed under these terms.  A \"work based on the
+Library\" means either the Library or any derivative work under
+copyright law: that is to say, a work containing the Library or a
+portion of it, either verbatim or with modifications and/or translated
+straightforwardly into another language.  (Hereinafter, translation is
+included without limitation in the term \"modification\".)\n\n
+
+  \"Source code\" for a work means the preferred form of the work for
+making modifications to it.  For a library, complete source code means
+all the source code for all modules it contains, plus any associated
+interface definition files, plus the scripts used to control compilation
+and installation of the library.\n\n
+
+  Activities other than copying, distribution and modification are not
+covered by this License; they are outside its scope.  The act of
+running a program using the Library is not restricted, and output from
+such a program is covered only if its contents constitute a work based
+on the Library (independent of the use of the Library in a tool for
+writing it).  Whether that is true depends on what the Library does
+and what the program that uses the Library does.\n\n
+
+  1. You may copy and distribute verbatim copies of the Library\'s
+complete source code as you receive it, in any medium, provided that
+you conspicuously and appropriately publish on each copy an
+appropriate copyright notice and disclaimer of warranty; keep intact
+all the notices that refer to this License and to the absence of any
+warranty; and distribute a copy of this License along with the
+Library.\n\n
+
+  You may charge a fee for the physical act of transferring a copy,
+and you may at your option offer warranty protection in exchange for a
+fee.\n\n
+
+  2. You may modify your copy or copies of the Library or any portion
+of it, thus forming a work based on the Library, and copy and
+distribute such modifications or work under the terms of Section 1
+above, provided that you also meet all of these conditions:\n\n
+
+a) The modified work must itself be a software library.\n\n
+
+b) You must cause the files modified to carry prominent notices
+stating that you changed the files and the date of any change.\n\n
+
+c) You must cause the whole of the work to be licensed at no
+charge to all third parties under the terms of this License.\n\n
+
+d) If a facility in the modified Library refers to a function or a
+table of data to be supplied by an application program that uses
+the facility, other than as an argument passed when the facility
+is invoked, then you must make a good faith effort to ensure that,
+in the event an application does not supply such function or
+table, the facility still operates, and performs whatever part of
+its purpose remains meaningful.\n\n
+
+(For example, a function in a library to compute square roots has
+a purpose that is entirely well-defined independent of the
+application.  Therefore, Subsection 2d requires that any
+application-supplied function or table used by this function must
+be optional: if the application does not supply it, the square
+root function must still compute square roots.)\n\n
+
+These requirements apply to the modified work as a whole.  If
+identifiable sections of that work are not derived from the Library,
+and can be reasonably considered independent and separate works in
+themselves, then this License, and its terms, do not apply to those
+sections when you distribute them as separate works.  But when you
+distribute the same sections as part of a whole which is a work based
+on the Library, the distribution of the whole must be on the terms of
+this License, whose permissions for other licensees extend to the
+entire whole, and thus to each and every part regardless of who wrote
+it.\n\n
+
+Thus, it is not the intent of this section to claim rights or contest
+your rights to work written entirely by you; rather, the intent is to
+exercise the right to control the distribution of derivative or
+collective works based on the Library.\n\n
+
+In addition, mere aggregation of another work not based on the Library
+with the Library (or with a work based on the Library) on a volume of
+a storage or distribution medium does not bring the other work under
+the scope of this License.\n\n
+
+  3. You may opt to apply the terms of the ordinary GNU General Public
+License instead of this License to a given copy of the Library.  To do
+this, you must alter all the notices that refer to this License, so
+that they refer to the ordinary GNU General Public License, version 2,
+instead of to this License.  (If a newer version than version 2 of the
+ordinary GNU General Public License has appeared, then you can specify
+that version instead if you wish.)  Do not make any other change in
+these notices.\n\n
+
+  Once this change is made in a given copy, it is irreversible for
+that copy, so the ordinary GNU General Public License applies to all
+subsequent copies and derivative works made from that copy.\n\n
+
+  This option is useful when you wish to copy part of the code of
+the Library into a program that is not a library.\n\n
+
+  4. You may copy and distribute the Library (or a portion or
+derivative of it, under Section 2) in object code or executable form
+under the terms of Sections 1 and 2 above provided that you accompany
+it with the complete corresponding machine-readable source code, which
+must be distributed under the terms of Sections 1 and 2 above on a
+medium customarily used for software interchange.\n\n
+
+  If distribution of object code is made by offering access to copy
+from a designated place, then offering equivalent access to copy the
+source code from the same place satisfies the requirement to
+distribute the source code, even though third parties are not
+compelled to copy the source along with the object code.\n\n
+
+  5. A program that contains no derivative of any portion of the
+Library, but is designed to work with the Library by being compiled or
+linked with it, is called a \"work that uses the Library\".  Such a
+work, in isolation, is not a derivative work of the Library, and
+therefore falls outside the scope of this License.\n\n
+
+  However, linking a \"work that uses the Library\" with the Library
+creates an executable that is a derivative of the Library (because it
+contains portions of the Library), rather than a \"work that uses the
+library\".  The executable is therefore covered by this License.
+Section 6 states terms for distribution of such executables.\n\n
+
+  When a \"work that uses the Library\" uses material from a header file
+that is part of the Library, the object code for the work may be a
+derivative work of the Library even though the source code is not.
+Whether this is true is especially significant if the work can be
+linked without the Library, or if the work is itself a library.  The
+threshold for this to be true is not precisely defined by law.\n\n
+
+  If such an object file uses only numerical parameters, data
+structure layouts and accessors, and small macros and small inline
+functions (ten lines or less in length), then the use of the object
+file is unrestricted, regardless of whether it is legally a derivative
+work.  (Executables containing this object code plus portions of the
+Library will still fall under Section 6.)\n\n
+
+  Otherwise, if the work is a derivative of the Library, you may
+distribute the object code for the work under the terms of Section 6.
+Any executables containing that work also fall under Section 6,
+whether or not they are linked directly with the Library itself.\n\n
+
+  6. As an exception to the Sections above, you may also combine or
+link a \"work that uses the Library\" with the Library to produce a
+work containing portions of the Library, and distribute that work
+under terms of your choice, provided that the terms permit
+modification of the work for the customer\'s own use and reverse
+engineering for debugging such modifications.\n\n
+
+  You must give prominent notice with each copy of the work that the
+Library is used in it and that the Library and its use are covered by
+this License.  You must supply a copy of this License.  If the work
+during execution displays copyright notices, you must include the
+copyright notice for the Library among them, as well as a reference
+directing the user to the copy of this License.  Also, you must do one
+of these things:\n\n
+
+a) Accompany the work with the complete corresponding
+machine-readable source code for the Library including whatever
+changes were used in the work (which must be distributed under
+Sections 1 and 2 above); and, if the work is an executable linked
+with the Library, with the complete machine-readable \"work that
+uses the Library\", as object code and/or source code, so that the
+user can modify the Library and then relink to produce a modified
+executable containing the modified Library.  (It is understood
+that the user who changes the contents of definitions files in the
+Library will not necessarily be able to recompile the application
+to use the modified definitions.)\n\n
+
+b) Use a suitable shared library mechanism for linking with the
+Library.  A suitable mechanism is one that (1) uses at run time a
+copy of the library already present on the user\'s computer system,
+rather than copying library functions into the executable, and (2)
+will operate properly with a modified version of the library, if
+the user installs one, as long as the modified version is
+interface-compatible with the version that the work was made with.\n\n
+
+c) Accompany the work with a written offer, valid for at
+least three years, to give the same user the materials
+specified in Subsection 6a, above, for a charge no more
+than the cost of performing this distribution.\n\n
+
+d) If distribution of the work is made by offering access to copy
+from a designated place, offer equivalent access to copy the above
+specified materials from the same place.\n\n
+
+e) Verify that the user has already received a copy of these
+materials or that you have already sent this user a copy.\n\n
+
+  For an executable, the required form of the \"work that uses the
+Library\" must include any data and utility programs needed for
+reproducing the executable from it.  However, as a special exception,
+the materials to be distributed need not include anything that is
+normally distributed (in either source or binary form) with the major
+components (compiler, kernel, and so on) of the operating system on
+which the executable runs, unless that component itself accompanies
+the executable.\n\n
+
+  It may happen that this requirement contradicts the license
+restrictions of other proprietary libraries that do not normally
+accompany the operating system.  Such a contradiction means you cannot
+use both them and the Library together in an executable that you
+distribute.\n\n
+
+  7. You may place library facilities that are a work based on the
+Library side-by-side in a single library together with other library
+facilities not covered by this License, and distribute such a combined
+library, provided that the separate distribution of the work based on
+the Library and of the other library facilities is otherwise
+permitted, and provided that you do these two things:\n\n
+
+a) Accompany the combined library with a copy of the same work
+based on the Library, uncombined with any other library
+facilities.  This must be distributed under the terms of the
+Sections above.\n\n
+
+b) Give prominent notice with the combined library of the fact
+that part of it is a work based on the Library, and explaining
+where to find the accompanying uncombined form of the same work.\n\n
+
+  8. You may not copy, modify, sublicense, link with, or distribute
+the Library except as expressly provided under this License.  Any
+attempt otherwise to copy, modify, sublicense, link with, or
+distribute the Library is void, and will automatically terminate your
+rights under this License.  However, parties who have received copies,
+or rights, from you under this License will not have their licenses
+terminated so long as such parties remain in full compliance.\n\n
+
+  9. You are not required to accept this License, since you have not
+signed it.  However, nothing else grants you permission to modify or
+distribute the Library or its derivative works.  These actions are
+prohibited by law if you do not accept this License.  Therefore, by
+modifying or distributing the Library (or any work based on the
+Library), you indicate your acceptance of this License to do so, and
+all its terms and conditions for copying, distributing or modifying
+the Library or works based on it.\n\n
+
+  10. Each time you redistribute the Library (or any work based on the
+Library), the recipient automatically receives a license from the
+original licensor to copy, distribute, link with or modify the Library
+subject to these terms and conditions.  You may not impose any further
+restrictions on the recipients\' exercise of the rights granted herein.
+You are not responsible for enforcing compliance by third parties with
+this License.\n\n
+
+  11. If, as a consequence of a court judgment or allegation of patent
+infringement or for any other reason (not limited to patent issues),
+conditions are imposed on you (whether by court order, agreement or
+otherwise) that contradict the conditions of this License, they do not
+excuse you from the conditions of this License.  If you cannot
+distribute so as to satisfy simultaneously your obligations under this
+License and any other pertinent obligations, then as a consequence you
+may not distribute the Library at all.  For example, if a patent
+license would not permit royalty-free redistribution of the Library by
+all those who receive copies directly or indirectly through you, then
+the only way you could satisfy both it and this License would be to
+refrain entirely from distribution of the Library.\n\n
+
+If any portion of this section is held invalid or unenforceable under any
+particular circumstance, the balance of the section is intended to apply,
+and the section as a whole is intended to apply in other circumstances.\n\n
+
+It is not the purpose of this section to induce you to infringe any
+patents or other property right claims or to contest validity of any
+such claims; this section has the sole purpose of protecting the
+integrity of the free software distribution system which is
+implemented by public license practices.  Many people have made
+generous contributions to the wide range of software distributed
+through that system in reliance on consistent application of that
+system; it is up to the author/donor to decide if he or she is willing
+to distribute software through any other system and a licensee cannot
+impose that choice.\n\n
+
+This section is intended to make thoroughly clear what is believed to
+be a consequence of the rest of this License.\n\n
+
+  12. If the distribution and/or use of the Library is restricted in
+certain countries either by patents or by copyrighted interfaces, the
+original copyright holder who places the Library under this License may add
+an explicit geographical distribution limitation excluding those countries,
+so that distribution is permitted only in or among countries not thus
+excluded.  In such case, this License incorporates the limitation as if
+written in the body of this License.\n\n
+
+  13. The Free Software Foundation may publish revised and/or new
+versions of the Lesser General Public License from time to time.
+Such new versions will be similar in spirit to the present version,
+but may differ in detail to address new problems or concerns.\n\n
+
+Each version is given a distinguishing version number.  If the Library
+specifies a version number of this License which applies to it and
+"any later version\", you have the option of following the terms and
+conditions either of that version or of any later version published by
+the Free Software Foundation.  If the Library does not specify a
+license version number, you may choose any version ever published by
+the Free Software Foundation.\n\n
+
+  14. If you wish to incorporate parts of the Library into other free
+programs whose distribution conditions are incompatible with these,
+write to the author to ask for permission.  For software which is
+copyrighted by the Free Software Foundation, write to the Free
+Software Foundation; we sometimes make exceptions for this.  Our
+decision will be guided by the two goals of preserving the free status
+of all derivatives of our free software and of promoting the sharing
+and reuse of software generally.\n\n
+
+NO WARRANTY\n\n
+
+  15. BECAUSE THE LIBRARY IS LICENSED FREE OF CHARGE, THERE IS NO
+WARRANTY FOR THE LIBRARY, TO THE EXTENT PERMITTED BY APPLICABLE LAW.
+EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR
+OTHER PARTIES PROVIDE THE LIBRARY \"AS IS\" WITHOUT WARRANTY OF ANY
+KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE
+LIBRARY IS WITH YOU.  SHOULD THE LIBRARY PROVE DEFECTIVE, YOU ASSUME
+THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n\n
+
+  16. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY
+AND/OR REDISTRIBUTE THE LIBRARY AS PERMITTED ABOVE, BE LIABLE TO YOU
+FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR
+CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR INABILITY TO USE THE
+LIBRARY (INCLUDING BUT NOT LIMITED TO LOSS OF DATA OR DATA BEING
+RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD PARTIES OR A
+FAILURE OF THE LIBRARY TO OPERATE WITH ANY OTHER SOFTWARE), EVEN IF
+SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGES.
+    </string>
+    <string name="license_opus" translatable="false">Opus</string>
+    <string name="license_opus_description" translatable="false">Modern audio compression for the internet</string>
+    <string name="license_opus_link" translatable="false">https://github.com/xiph/opus</string>
+    <string name="license_opus_copyright" translatable="false">Copyright 2001–2011 Xiph.Org, Skype Limited, Octasic, Jean-Marc Valin, Timothy B. Terriberry, CSIRO, Gregory Maxwell, Mark Borgerding, Erik de Castro Lopo</string>
+    <string name="license_opus_text" translatable="false">
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:\n\n
+
+- Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.\n\n
+
+- Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the distribution.\n\n
+
+- Neither the name of Internet Society, IETF or IETF Trust, nor the
+names of specific contributors, may be used to endorse or promote
+products derived from this software without specific prior written
+permission.\n\n
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+``AS IS\'\' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER
+OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n
+
+Opus is subject to the royalty-free patent licenses which are
+specified at:\n\n
+
+Xiph.Org Foundation:
+https://datatracker.ietf.org/ipr/1524/ \n\n
+
+Microsoft Corporation:
+https://datatracker.ietf.org/ipr/1914/ \n\n
+
+Broadcom Corporation:
+https://datatracker.ietf.org/ipr/1526/
+    </string>
+    <string name="license_sirit" translatable="false">Sirit</string>
+    <string name="license_sirit_description" translatable="false">A runtime SPIR-V assembler</string>
+    <string name="license_sirit_link" translatable="false">https://github.com/ReinUsesLisp/sirit</string>
+    <string name="license_sirit_copyright" translatable="false">Copyright © 2019, sirit All rights reserved.</string>
+    <string name="license_sirit_text" translatable="false">
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:\n
+* Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.\n
+* Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.\n
+* Neither the name of the organization nor the
+  names of its contributors may be used to endorse or promote products
+  derived from this software without specific prior written permission.\n\n
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND
+ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL COPYRIGHT HOLDER BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    </string>
+    <string name="license_adreno_tools" translatable="false">Adreno Tools</string>
+    <string name="license_adreno_tools_description" translatable="false">A library for applying rootless Adreno GPU driver modifications/replacements</string>
+    <string name="license_adreno_tools_link" translatable="false">https://github.com/bylaws/libadrenotools</string>
+    <string name="license_adreno_tools_copyright" translatable="false">Copyright © 2021, Billy Laws</string>
+    <string name="license_adreno_tools_text" translatable="false">
+BSD 2-Clause License\n\n
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:\n\n
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.\n\n
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.\n\n
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+    </string>
+
+</resources>

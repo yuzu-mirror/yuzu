@@ -7,7 +7,7 @@
 
 REV_NAME="yuzu-${GITDATE}-${GITREV}"
 
-BUILD_FLAVOR="mainline"
+BUILD_FLAVOR="ea"
 
 BUILD_TYPE_LOWER="release"
 BUILD_TYPE_UPPER="Release"

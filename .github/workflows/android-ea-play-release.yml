@@ -41,7 +41,8 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y ccache apksigner glslang-dev glslang-tools
       - name: Build
-        run: ./.ci/scripts/android/eabuild.sh
+        run: ./.ci/scripts/android/eaReleasebuild.sh
+      - name: Copy and sign artifacts
         env:
           EA_PLAY_ANDROID_KEYSTORE_B64: ${{ secrets.PLAY_ANDROID_KEYSTORE_B64 }}
           PLAY_ANDROID_KEY_ALIAS: ${{ secrets.PLAY_ANDROID_KEY_ALIAS }}
@@ -50,12 +51,9 @@ jobs:
           STORE_TRACK: ${{ github.event.inputs.release-track }}
           AUTO_VERSIONED: true
           BUILD_EA: true
-      - name: Create release
-        uses: softprops/action-gh-release@v1
+        run: ./.ci/scripts/android/eaupload.sh
+      - name: Upload
+        uses: actions/upload-artifact@v4
         with:
-          tag_name: ${{ env.EA_TAG_NAME }}
-          name: ${{ env.EA_TAG_NAME }}
-          draft: false
-          prerelease: false
-          repository: yuzu/yuzu-android
-          token: ${{ secrets.ALT_GITHUB_TOKEN }}
+          name: earelease
+          path: artifacts/

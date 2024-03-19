@@ -41,6 +41,7 @@ jobs:
         run: |
           echo "GIT_TAG_NAME=android-${{ github.event.inputs.releast-tag }}" >> $GITHUB_ENV
           ./.ci/scripts/android/mainlinebuild.sh
+      - name: Copy and sign artifacts
         env:
           MAINLINE_PLAY_ANDROID_KEYSTORE_B64: ${{ secrets.PLAY_ANDROID_KEYSTORE_B64 }}
           PLAY_ANDROID_KEY_ALIAS: ${{ secrets.PLAY_ANDROID_KEY_ALIAS }}
@@ -48,3 +49,9 @@ jobs:
           SERVICE_ACCOUNT_KEY_B64: ${{ secrets.MAINLINE_SERVICE_ACCOUNT_KEY_B64 }}
           STORE_TRACK: ${{ github.event.inputs.release-track }}
           AUTO_VERSIONED: true
+        run: ./.ci/scripts/android/upload.sh
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: mainline
+          path: artifacts/

@@ -5,22 +5,13 @@ name: yuzu-android-mainline-play-release
 
 on:
   workflow_dispatch:
-    inputs:
-      release-tag:
-        description: 'Tag # from yuzu-android that you want to build and publish'
-        required: true
-        default: '200'
-      release-track:
-        description: 'Play store release track (internal/alpha/beta/production)'
-        required: true
-        default: 'alpha'
 
 jobs:
   android:
     runs-on: ubuntu-latest
     if: ${{ github.repository == 'yuzu-emu/yuzu' }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         name: Checkout
         with:
           fetch-depth: 0
@@ -38,7 +29,7 @@ jobs:
             process.chdir('${{ github.workspace }}');
             mergebot(execa);
       - name: Set up JDK 17
-        uses: actions/setup-java@v3
+        uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
@@ -50,6 +41,7 @@ jobs:
         run: |
           echo "GIT_TAG_NAME=android-${{ github.event.inputs.releast-tag }}" >> $GITHUB_ENV
           ./.ci/scripts/android/mainlinebuild.sh
+      - name: Copy and sign artifacts
         env:
           MAINLINE_PLAY_ANDROID_KEYSTORE_B64: ${{ secrets.PLAY_ANDROID_KEYSTORE_B64 }}
           PLAY_ANDROID_KEY_ALIAS: ${{ secrets.PLAY_ANDROID_KEY_ALIAS }}
@@ -57,3 +49,9 @@ jobs:
           SERVICE_ACCOUNT_KEY_B64: ${{ secrets.MAINLINE_SERVICE_ACCOUNT_KEY_B64 }}
           STORE_TRACK: ${{ github.event.inputs.release-track }}
           AUTO_VERSIONED: true
+        run: ./.ci/scripts/android/upload.sh
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: mainline
+          path: artifacts/

@@ -4,14 +4,16 @@
 # https://github.com/codespell-project/actions-codespell
 # https://github.com/codespell-project/codespell
 name: codespell
-on: pull_request
+on: 
+# pull_request
+  workflow_dispatch:
 permissions: {}
 jobs:
   codespell:
     name: Check for spelling errors
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           persist-credentials: false
       - uses: codespell-project/actions-codespell@master

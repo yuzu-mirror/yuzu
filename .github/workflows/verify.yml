@@ -4,12 +4,21 @@
 name: 'yuzu verify'
 
 on:
-  pull_request:
-    branches: [ master ]
-env:
-  PR_NUMBER: pr${{ github.event.number }}
+  # workflow_call:
+    # inputs:
+      # from_ci:
+        # type: boolean
+        # required: false
+        # default: true
+  workflow_dispatch:
 
 jobs:
+  codespell:
+    permissions: write-all
+    needs: check
+    uses: ./.github/workflows/codespell.yml
+    if: ${{ needs.check.outputs.SHOULD_BUILD == 1 }}
+    secrets: inherit
   format:
     name: 'verify format'
     runs-on: ubuntu-latest

@@ -4,17 +4,7 @@
 # https://github.com/codespell-project/actions-codespell
 # https://github.com/codespell-project/codespell
 name: codespell
-on:
-  workflow_call:
-    inputs:
-      from_ci:
-        type: boolean
-        required: false
-        default: true
-
-  workflow_dispatch:
-
-# pull_request
+on: pull_request
 permissions: {}
 jobs:
   codespell:

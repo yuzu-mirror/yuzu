@@ -4,12 +4,6 @@
 name: 'yuzu verify'
 
 on:
-  # workflow_call:
-    # inputs:
-      # from_ci:
-        # type: boolean
-        # required: false
-        # default: true
   workflow_dispatch:
 
 jobs:
@@ -27,12 +21,6 @@ jobs:
           distribution: 'temurin'
       - name: 'Verify Formatting'
         run: bash -ex ./.ci/scripts/format/script.sh
-  codespell:
-    permissions: write-all
-    needs: check
-    uses: ./.github/workflows/codespell.yml
-    if: ${{ needs.check.outputs.SHOULD_BUILD == 1 }}
-    secrets: inherit
   earelease:
     runs-on: ubuntu-latest
     needs: format

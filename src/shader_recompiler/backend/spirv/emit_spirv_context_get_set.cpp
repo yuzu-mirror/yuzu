@@ -549,6 +549,29 @@ Id EmitInvocationInfo(EmitContext& ctx) {
     case Stage::TessellationEval:
         return ctx.OpShiftLeftLogical(ctx.U32[1], ctx.OpLoad(ctx.U32[1], ctx.patch_vertices_in),
                                       ctx.Const(16u));
+    case Stage::Geometry: {
+        u32 vertices_count = 0;
+        switch (ctx.runtime_info.input_topology) {
+        case InputTopology::Lines:
+            vertices_count = 2;
+            break;
+        case InputTopology::LinesAdjacency:
+            vertices_count = 4;
+            break;
+        case InputTopology::Triangles:
+            vertices_count = 3;
+            break;
+        case InputTopology::TrianglesAdjacency:
+            vertices_count = 6;
+            break;
+        case InputTopology::Points:
+        default:
+            vertices_count = 1;
+            break;
+        };
+
+        return ctx.Const(vertices_count << 16);
+    }
     default:
         LOG_WARNING(Shader, "(STUBBED) called");
         return ctx.Const(0x00ff0000u);
